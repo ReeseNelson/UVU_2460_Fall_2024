@@ -497,7 +497,7 @@ GameObject:
   - component: {fileID: 939710837}
   - component: {fileID: 939710840}
   - component: {fileID: 939710839}
-  - component: {fileID: 939710838}
+  - component: {fileID: 939710841}
   m_Layer: 5
   m_Name: Text (Legacy) (1)
   m_TagString: Untagged
@@ -524,20 +524,6 @@ RectTransform:
   m_AnchoredPosition: {x: -165, y: 23}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &939710838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 939710836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90acbc723e05e414c841cbc32c52a8f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  label: {fileID: 939710839}
-  dataObj: {fileID: 11400000, guid: b8b6445f52657ab44b87d8598eda64b4, type: 2}
 --- !u!114 &939710839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -580,6 +566,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 939710836}
   m_CullTransparentMesh: 1
+--- !u!114 &939710841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939710836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ae4ffa7cb8b8424899e2851418bbff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: {fileID: 939710839}
+  dataObj: {fileID: 11400000, guid: 0460eb70cc612df44b0ec391accc6b0d, type: 2}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1112,27 +1112,27 @@ MonoBehaviour:
   triggerEnterEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 1c43204b80095a24bac4a80e8b24ac63, type: 2}
-        m_TargetAssemblyTypeName: FloatData, Assembly-CSharp
+      - m_Target: {fileID: 11400000, guid: 0460eb70cc612df44b0ec391accc6b0d, type: 2}
+        m_TargetAssemblyTypeName: Intdatascript, Assembly-CSharp
         m_MethodName: UpdateValue
-        m_Mode: 4
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: -30
+          m_IntArgument: -10
+          m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 939710836}
-        m_TargetAssemblyTypeName: TextLabelBehavior, Assembly-CSharp
+      - m_Target: {fileID: 939710841}
+        m_TargetAssemblyTypeName: TextBeHavInt, Assembly-CSharp
         m_MethodName: UpdateLabel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: -30
+          m_IntArgument: -10
+          m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
