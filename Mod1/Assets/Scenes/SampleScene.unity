@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 405014510}
   - component: {fileID: 405014517}
   - component: {fileID: 405014516}
+  - component: {fileID: 405014518}
   m_Layer: 0
   m_Name: Health Points
   m_TagString: Untagged
@@ -367,6 +368,19 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0.5, y: 0.5, z: 0.5}
   m_DirtyAABB: 0
+--- !u!114 &405014518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405014509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d7e1a9e82901b43ab7bd64c50d15a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 405014509}
 --- !u!1 &414516441
 GameObject:
   m_ObjectHideFlags: 0
@@ -671,7 +685,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: MainCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6029,7 +6043,7 @@ Transform:
   m_GameObject: {fileID: 1802898980}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.74, y: 0.2, z: 1.88}
+  m_LocalPosition: {x: -6.77, y: 0.2, z: 1.88}
   m_LocalScale: {x: 2.598, y: 2.598, z: 2.598}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6092,6 +6106,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1466373471}
+        m_TargetAssemblyTypeName: TextLabelBehavior, Assembly-CSharp
+        m_MethodName: UpdateLabel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2039347557
 GameObject:
   m_ObjectHideFlags: 0
@@ -6105,6 +6131,9 @@ GameObject:
   - component: {fileID: 2039347559}
   - component: {fileID: 2039347558}
   - component: {fileID: 2039347562}
+  - component: {fileID: 2039347563}
+  - component: {fileID: 2039347565}
+  - component: {fileID: 2039347564}
   m_Layer: 0
   m_Name: BackGuy
   m_TagString: Untagged
@@ -6249,6 +6278,44 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2039347563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039347557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebed3ab52e9619e4b91336266e55f630, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2039347564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039347557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d7e1a9e82901b43ab7bd64c50d15a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+--- !u!114 &2039347565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039347557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d7e1a9e82901b43ab7bd64c50d15a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!1 &2131221864
 GameObject:
   m_ObjectHideFlags: 0
@@ -6261,6 +6328,7 @@ GameObject:
   - component: {fileID: 2131221868}
   - component: {fileID: 2131221867}
   - component: {fileID: 2131221866}
+  - component: {fileID: 2131221869}
   m_Layer: 5
   m_Name: Health Button
   m_TagString: Untagged
@@ -6418,6 +6486,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2131221864}
   m_CullTransparentMesh: 1
+--- !u!114 &2131221869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131221864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 092ece5df68f93a45963d9c5a15e4edc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onButtonClick:
+    m_PersistentCalls:
+      m_Calls: []
+  myButton: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
