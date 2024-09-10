@@ -17,12 +17,14 @@ public class MatchBehaviour : MonoBehaviour
         if (otherID == idObj)
         {
             matchEvent.Invoke();
+
         }
         else
         {
            noMatchEvent.Invoke();
            yield return new WaitForSeconds(0.5f);
            noMatchDelayedEvent.Invoke();
+
         }
     } 
 }
