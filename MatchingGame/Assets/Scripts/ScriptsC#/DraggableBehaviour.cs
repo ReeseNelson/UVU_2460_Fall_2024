@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine.Events;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class DraggableBehaviour : MonoBehaviour
 {
     private Camera cameraObj;
     public bool draggable;
