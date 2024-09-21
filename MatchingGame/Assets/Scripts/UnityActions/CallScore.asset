@@ -9,7 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50a1d9e176a08a5459fe1bcab3c13e72, type: 3}
-  m_Name: V3A
+  m_Script: {fileID: 11500000, guid: 2d6b2028995ff344599dce2309839005, type: 3}
+  m_Name: CallScore
   m_EditorClassIdentifier: 
-  value: {x: 8, y: 5, z: 0}
