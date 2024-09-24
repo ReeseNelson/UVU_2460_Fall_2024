@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 77854040499600006}
   - component: {fileID: 5465837628180432204}
   - component: {fileID: 3938128255937416208}
+  - component: {fileID: 2741126814011230121}
   m_Layer: 6
   m_Name: Dot
   m_TagString: Untagged
@@ -148,8 +149,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -289,6 +290,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  canRun: 0
   counterNum: {fileID: 0}
   seconds: 3
+--- !u!114 &2741126814011230121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6167862273690891621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b5107611a872464a922e3935d16d134, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionObj: {fileID: 0}
+  onRaiseEvent:
+    m_PersistentCalls:
+      m_Calls: []
