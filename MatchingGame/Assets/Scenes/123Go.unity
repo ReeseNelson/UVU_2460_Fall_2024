@@ -449,13 +449,12 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: GO!
+          m_StringArgument: BLAST OFF!
           m_BoolArgument: 0
         m_CallState: 2
   repeatUntilFalseEvent:
     m_PersistentCalls:
       m_Calls: []
-  canRun: 0
   counterNum: {fileID: 11400000, guid: 74c7f9e8c53a7044a89e62c7b8a91f05, type: 2}
   seconds: 1
 --- !u!212 &1059883331
